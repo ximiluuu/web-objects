@@ -1,0 +1,559 @@
+
+/* 容器样式 */
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 55px;
+    margin-left: 0%;
+    margin-right: 0%;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    padding: 0%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.indicators li {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.indicators li.active {
+    background-color: rgb(240, 6, 6);
+}
+
+p.recentshow {
+    background-color: white;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+    color: rgb(165, 67, 67);
+}
+
+.show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.show-item {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: 2px solid #c15151;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.show-item img {
+    width: 100%;
+    height: auto;
+}
+
+.show-item p {
+    color: gray;
+    margin-left: 5px;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+
+.show-item span {
+    margin-left: 5px;
+    color: gray;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+p.show-topic {
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+span.showing {
+    color: rgb(211, 44, 44);
+    font-weight: 600;
+}
+
+span.appointment {
+    background-color: rgb(211, 44, 44);
+    border-radius: 2px;
+    color: #fff;
+    padding: 1px;
+}
+
+.hall {
+    background: url(../image/bg11.jpg);
+    background-size: 100% auto;
+    display: flex;
+    /* 使用Flexbox布局 */
+    flex-direction: column;
+    /* 子元素垂直排列 */
+    align-items: center;
+    /* 水平居中对齐子元素 */
+    margin-top: 50px;
+}
+
+.hall>img {
+    width: 10%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+.gallery {
+    display: flex;
+    /* 使用Flexbox布局 */
+    flex-direction: column;
+    /* 子元素垂直排列 */
+    align-items: center;
+    /* 水平居中对齐子元素 */
+    flex-wrap: wrap;
+    border-color: #821610;
+    border-radius: 20px;
+    border-width: 10px;
+    border-style: solid;
+    margin: 50px 30px 30px 30px;
+    background: url(../image/bg12.png);
+    background-size: 100% auto;
+
+}
+
+.gallery>img {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.image-container {
+
+    display: flex;
+    margin: 20px;
+    width: 80%;
+    height: auto;
+
+}
+
+.image1 {
+    position: relative;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.image {
+    position: relative;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+}
+
+.image2 {
+    position: relative;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    margin-right: 10%;
+}
+
+.image3 {
+    position: relative;
+    width: 23%;
+    height: auto;
+    overflow: hidden;
+    margin-right: 5%;
+}
+
+.image4 {
+    position: relative;
+    width: 22.5%;
+    height: auto;
+    overflow: hidden;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    position: relative;
+    background: url(../image/bg10.png);
+    width: 95%;
+    height: 51%;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.box1 {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin-left: 50px;
+}
+
+.box2,
+.box3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* 使用Flexbox布局 */
+}
+
+
+
+.image img,
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    /* 平滑放大效果 */
+}
+
+
+
+.image:hover img,
+.image1:hover img,
+.image2:hover img,
+.image3:hover img,
+.image4:hover img {
+    transform: scale(1.1);
+    /* 放大效果 */
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* 半透明背景 */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+
+}
+
+
+
+.image:hover .caption,
+.image1:hover .caption,
+.image2:hover .caption,
+.image3:hover .caption,
+.image4:hover .caption {
+    opacity: 1;
+}
+
+.accordion {
+    display: flex;
+    width: 96%;
+    height: 450px;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    overflow: hidden;
+    padding: 30px 30px;
+    margin-bottom: 70px;
+
+
+}
+
+.panel {
+    flex: 1;
+    position: relative;
+    background: #821610;
+    height: 100%;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    transition: flex 0.5s ease;
+}
+
+.panel:hover {
+    flex: 6;
+    /* 鼠标悬停时展开面板 */
+}
+
+.panel:not(:hover) {
+    flex: 0.5;
+    /* 其他面板收缩 */
+}
+
+.panel .content {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    transition: opacity 0.5s ease;
+}
+
+.panel:hover .content {
+    opacity: 1;
+    /* 悬停时显示内容 */
+}
+
+h3 {
+    margin-top: 170px;
+    margin-left: 5px;
+    font-size: 24px;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+.tab-item {
+    width: 1233px;
+    height: 700px;
+
+    overflow: hidden;
+}
+
+input {
+    display: none;
+}
+
+.tab-item label {
+    width: 110px;
+    height: 40px;
+    display: block;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    float: left;
+    padding: 0;
+    border-radius: 12px 12px 0 0;
+    border: #821610;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.tab label:hover {
+    background-color: #821610;
+    color: white;
+}
+
+.hall ul.content {
+    width: 13563px;
+    height: 500px;
+    margin-top: 0px;
+    background: #821610;
+    color: rgb(12, 12, 12);
+    float: left;
+    border-radius: 0;
+    border-color: #821610;
+    border-style: solid;
+    display: flex;
+    transition: 0.3s;
+}
+
+#ck1:checked~label[for="ck1"] {
+    background-color: #821610;
+}
+
+#ck2:checked~label[for="ck2"] {
+    background-color: #821610;
+}
+
+#ck3:checked~label[for="ck3"] {
+    background-color: #821610;
+}
+
+#ck4:checked~label[for="ck4"] {
+    background-color: #821610;
+}
+
+#ck5:checked~label[for="ck5"] {
+    background-color: #821610;
+}
+
+#ck6:checked~label[for="ck6"] {
+    background-color: #821610;
+}
+
+#ck7:checked~label[for="ck7"] {
+    background-color: #821610;
+}
+
+#ck8:checked~label[for="ck8"] {
+    background-color: #821610;
+}
+
+#ck9:checked~label[for="ck9"] {
+    background-color: #821610;
+}
+
+#ck10:checked~label[for="ck10"] {
+    background-color: #821610;
+}
+
+#ck11:checked~label[for="ck11"] {
+    background-color: #821610;
+}
+
+.hall .content li {
+    width: 1189px;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+}
+
+.hall .content li img {
+    width: 300px;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.hall .content li p {
+    font-size: 20px;
+    color: #fff;
+    width: 700px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+
+
+#ck1:checked~ul {
+    margin-left: 0px;
+}
+
+#ck2:checked~ul {
+    margin-left: -1189px;
+}
+
+#ck3:checked~ul {
+    margin-left: -2378px;
+}
+
+#ck4:checked~ul {
+    margin-left: -3569px;
+}
+
+#ck5:checked~ul {
+    margin-left: -4756px;
+}
+
+#ck6:checked~ul {
+    margin-left: -5945px;
+}
+
+#ck7:checked~ul {
+    margin-left: -7134px;
+}
+
+#ck8:checked~ul {
+    margin-left: -8323px;
+}
+
+#ck9:checked~ul {
+    margin-left: -9513px;
+}
+
+#ck10:checked~ul {
+    margin-left: -10701px;
+}
+
+#ck11:checked~ul {
+    margin-left: -11890px;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: rgb(80, 97, 109);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+footer p a {
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}

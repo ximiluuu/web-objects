@@ -1,0 +1,206 @@
+.wrap{
+    margin: 100px 42px 30px;
+}
+/*开放时间*/
+ul{
+    padding-inline-start:0;
+    list-style: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    height: 32px;
+    margin: 60px auto 25px;
+    text-align: center;
+}
+.title span{
+    display: inline-block;
+    height: 26px;
+    font-size: 26px;
+    line-height: 1;
+    vertical-align: middle;
+}
+.title img{
+    width: 22px;
+    height: 32px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.open_time_main{
+    position: relative;
+    background-image: url(../image/bg05.jpg);
+    background-size: 1258px 529px;
+    height: 529px;
+    width: 1258px;
+    color: #fff;
+    margin: 0 auto;
+}
+.open_time_left{
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    width: 405px;
+    height: 280px;
+    text-align: left;
+}
+.open_time_right{
+    position: absolute;
+    top: 140px;
+    right: 70px;
+    width: 405px;
+    text-align: right;
+    height: 280px;
+}
+.open_time_main div div{
+    position: static;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.open_time_left div :first-child{
+    position: inherit;
+    background: url(../image/bg06.png) no-repeat right center;
+    padding-right: 45px;
+    margin-right: 22px;
+}
+.open_time_left div :nth-child(2) {
+    position: inherit;
+    font-weight: bolder;
+    padding: 3px;
+    border-bottom: 1px solid #d0ad7c;
+    border-top: 1px solid #d0ad7c;
+}
+.open_time_right div :first-child{
+    position: inherit;
+    font-weight: bolder;
+    padding: 3px;
+    border-bottom: 1px solid #d0ad7c;
+    border-top: 1px solid #d0ad7c;
+}
+.open_time_right div :nth-child(2) {
+    position: inherit;
+    background: url(../image/bg06.png) no-repeat left center;
+    padding-left: 45px;
+    margin-left: 22px;
+}
+.open_time_main div p{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.open_time_main div ul li{
+    font-size: 18px;
+    line-height:30px;
+}
+.open_time_left ul li span{
+    float:right;
+}
+.open_time_right ul li span{
+    float:left;
+}
+/*游览地图*/
+aside{
+    width: 250px;
+    height: 510px;
+    padding: 20px 40px;
+    background: url(../image/bg07.jpg) repeat;
+    border-radius:15px;
+    font-size: 18px;
+    line-height: 2.0;
+    overflow-y: auto;
+    float: left;
+}
+aside img{
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+aside span{
+    vertical-align: middle;
+}
+aside ul li a:visited{
+    color: #821610;
+}
+aside ul li a:hover{
+    cursor: pointer;
+    color: #821610;
+}
+.list{
+    margin-left:30px;
+}
+.map_content_box{
+    background: url(../image/bg08.png) repeat;
+    padding: 30px 20px;
+    height: 490px;
+    width:880px;
+    border-radius: 15px;
+    float: right;
+}
+.map_wrap{
+    height: 500px;
+    width:880px;
+    position: relative;
+}
+.map_content{
+    height: 500px;
+    width: 880px;
+    display: none;
+}
+.map_content :first-child{
+    position: relative;
+    height: 500px;
+    width: 880px;
+    overflow: hidden;
+}
+.map_content :first-child img{
+    position: absolute;
+    top: -400px;
+    left: 0;
+    width: 880px;
+    height: 1482.26px;
+    cursor: move;
+}
+.map_content :nth-child(2){
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 36px;
+    height: 120px;
+}
+.map_content :nth-child(2) i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+    position: static;
+    font-size: 36px;
+    font-weight: bold;
+    color: #821610;
+    background: hsla(0, 0%, 100%, .8);
+    border:hsla(0, 0%, 100%, 0) solid 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.map_content :nth-child(2) i span{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.map_content :nth-child(2) i:hover{
+    border: #821610 solid 4px;
+}
+.download {
+    background-image: url(../image/bg09.png);
+    background-size: 36px 36px;
+}
+.now{
+    display:contents;
+}
+.tour_map_main::after{
+    content: "";
+    clear: both;
+    display: block;
+}

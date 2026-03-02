@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>展览 - 故宫博物院</title>
+        <link rel="stylesheet" href="../css/exhibition.css">
+        <link rel="stylesheet" href="../css/frame.css">
+    </head>
+    <body>
+    <!-- 头部 -->
+    <header>
+        <div class="top-icon">
+            <img src="../image/img001.png">
+            <h1>故宫博物馆</h1>
+        </div>
+        <nav>
+            <div class="top-nav">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="./tour.html">游览</a></li>
+                    <li><a href="./exhibition.html">展览</a></li>
+                    <li><a href="./cultural.html">文创</a></li>
+                    <li><a href="./book.html">订票</a></li>
+                    <li><a href="./register.html">登录</a></li>
+                    <div class="nav-box"></div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="carousel-slides">
+            <img src="../image/img069.jpg" alt="pic1" class="carousel-slide">
+            <img src="../image/img070.jpg" alt="pic2" class="carousel-slide">
+            <img src="../image/img071.jpg" alt="pic3" class="carousel-slide">
+
+            <ul class="indicators">
+                <li class="active" onclick="changeSlide(0)"></li>
+                <li onclick="changeSlide(1)"></li>
+                <li onclick="changeSlide(2)"></li>
+            </ul>
+        </div>
+        <p class="recentshow">正在展览</p>
+        <div class="show">
+            <div class="show-item">
+                <img src="../image/img072.jpg" alt="大道之行：儒家文化特展">
+                <p class="show-topic">大道之行：儒家文化特展</p>
+                <p class="show-location">展览地点：午门及东西雁翅楼展厅</p>
+                <span>展览时间：2024/10/01 - 2025/01/05</span>
+                <span class="showing">【在展】</span>
+                <span class="appointment">需预约</span>
+            </div>
+            <div class="show-item">
+                <img src="../image/img073.jpg" alt="大圣遗音———古琴文化展（第二期）">
+                <p class="show-topic">大圣遗音———古琴文化展（第二期）</p>
+                <p class="show-location">展览地点：钟粹宫展厅</p>
+                <span>常设展览</span>
+                <span class="showing">【在展】</span>
+            </div>
+            <div class="show-item">
+                <img src="../image/img074.jpg" alt="吉光片羽：故宫博物院藏清代宫廷雕版">
+                <p class="show-topic">吉光片羽：故宫博物院藏清代宫廷雕版</p>
+                <p class="show-location">展览地点：太和门内东南崇楼及朝房雕版馆</p>
+                <span>常设展览</span>
+                <span class="showing">【在展】</span>
+            </div>
+            <div class="show-item">
+                <img src="../image/img075.jpg" alt="诚仁慎术———清宫医药文化展">
+                <p class="show-topic">诚仁慎术———清宫医药文化展</p>
+                <p class="show-location">展览地点：永和宫展厅</p>
+                <span>常设展览</span>
+                <span class="showing">【在展】</span>
+            </div>
+            <div class="show-item">
+                <img src="../image/img076.jpg" alt="珍宝馆">
+                <p class="show-topic">珍宝馆</p>
+                <p class="show-location">展览地点：宁寿宫区</p>
+                <span>专馆</span>
+                <span class="showing">【在展】</span>
+            </div>
+            <div class="show-item">
+                <img src="../image/img077.jpg" alt="钟表馆">
+                <p class="show-topic">钟表馆</p>
+                <p class="show-location">展览地点：奉先殿</p>
+                <span>专馆</span>
+                <span class="showing">【在展】</span>
+            </div>
+        </div>
+        <div class="hall">
+            <img src="../image/img078.png" alt="专馆">
+            <div class="tab">
+                <div class="tab-item">
+                    <input type="radio" id="ck1" name="mytab" checked>
+                    <input type="radio" id="ck2" name="mytab">
+                    <input type="radio" id="ck3" name="mytab">
+                    <input type="radio" id="ck4" name="mytab">
+                    <input type="radio" id="ck5" name="mytab">
+                    <input type="radio" id="ck6" name="mytab">
+                    <input type="radio" id="ck7" name="mytab">
+                    <input type="radio" id="ck8" name="mytab">
+                    <input type="radio" id="ck9" name="mytab">
+                    <input type="radio" id="ck10" name="mytab">
+                    <input type="radio" id="ck11" name="mytab">
+                    <label for="ck1">书画馆</label>
+                    <label for="ck2">武备馆</label>
+                    <label for="ck3">珍宝馆</label>
+                    <label for="ck4">钟表馆</label>
+                    <label for="ck5">陶瓷馆</label>
+                    <label for="ck6">古建馆</label>
+                    <label for="ck7">家具馆</label>
+                    <label for="ck8">戏曲馆</label>
+                    <label for="ck9">数字馆</label>
+                    <label for="ck10">青铜器馆</label>
+                    <label for="ck11">雕塑馆</label>
+    
+                    <ul class="content">
+                        <li>
+                            <img src="../image/img079.jpg" alt="书画馆">
+                            <p>故宫博物院收藏有丰富的中国古代书画。其中既有晋唐宋元的稀世孤本，也有明清各个画派名家的代表作品，可以清晰、系统地反映
+                                中国古代书法与绘画艺术发展的脉络。为了感受经典，分享中国书画艺术的美轮美奂，展示中华传统文化的博大精深，我们将分批展
+                                出历代书画家的精品佳作，以供广大观众研究、欣赏。<br>
+                                书画馆暂时不开放，再次开放时间另行通知。给您参观带来不便，敬请谅解。</p>
+                        </li>
+                        <li>
+                            <img src="../image/img080.jpg" alt="武备馆">
+                            <p>故宫武备馆是故宫博物院的第六个永久性专馆，位于箭亭，属于东路建筑，奉先殿南。该馆展示了清代前期从皇太极到嘉庆帝等
+                                六位皇帝的御用马鞍，以及乾隆的御用马鞭、腰刀等文物。中间大玻璃展柜则陈列着皇帝的盔甲以及八旗的盔甲和一些弓箭等文物。
+                                武备馆虽小，但文物珍贵，展现了清代武备的核心--弓马骑射，以及皇帝们对八旗子弟的训诫和期望。<br>
+                                武备馆暂时不开放，再次开放时间另行通知。给您参观带来不便，敬请谅解。
+                            </p>
+                        </li>
+                        <li>
+                            <img src="../image/img081.jpg" alt="珍宝馆">
+                            <p>故宫博物院目前收藏有180多万件文物，其中绝大多数属于清宫廷遗存，今称“清宫旧藏”。清宫旧藏品有的源自前代皇室的递藏，有的系由宫廷营
+                                造体系--内务府造办处与苏州、南京、杭州三织造等共同承旨制另有每逢年节地方官吏的贡品，甚至不乏来自少数民族政权或与西方国家交往获赠的礼品。
+                                “珍宝馆”从故宫博物院藏品中遴选约400件(套)文物，结建筑的特点，在皇极殿两侧庑房四个展厅分别陈列珠宝、金银、玉石、盆景类文物;养性殿、
+                                乐寿堂、颐和轩等建筑则根据其功能与历史，恢复相关原状防设。愿您置身于美轮美奂的殿堂之中，细细品味这些奇珍异宝所呈现的旷世之美，
+                                默默感受先人的理念与情感。</p>
+                        </li>
+                        <li>
+                            <img src="../image/img082.jpg" alt="钟表馆">
+                            <p>钟表是故宫博物院丰富藏品中非常特殊与珍贵的门类，无论是藏品数量，还是类别都堪称世界博物馆钟表收藏中的翘楚。故宫博物院收藏
+                                中外钟表1500多件，制作年代从18世纪至20世纪初不等。其中既有英国、法国、瑞土等国的名家之作，也有清宫做钟处、广州的精品，
+                                还有一些中西合壁的产物。这些钟表通过贸易、官员进献、外国使团或组织馈赠、清廷自主制造等几种途径汇聚清宫。尽管各自的文化
+                                背景决定了这些钟表以不同的面相出现，但装饰华贵制作精美，功能复杂是其共性。这些钟表不但具有很高的艺术美学价值，而且还拥有
+                                极其重要的文化价值、技术价值。本展览遴选钟表48件，分5个单元展示，以期使观众可以领略不同时期、不同国家、不同地域钟表的多姿多彩</p>
+                        </li>
+                        <li>
+                            <img src="../image/img083.jpg" alt="陶瓷馆">
+                            <p>故宫陶瓷馆创建与1952年。中国是享誉世界的文明古国，在漫长的历史进程中，创造了丰富灿烂的物质和精神文化，陶瓷堪称其中最杰出的代表之一。
+                                故宫博物院是在明、清两代皇宫建筑及其收藏品基础上建立的中国最大的综合类博物馆，在收藏的186万多件文物中，陶瓷类文物约占36万多件，
+                                而绝大部分属于清代宫廷藏品，可谓自成体系，流传有绪。特别是经过几代专家的研究鉴定，使故宫博物院的陶瓷藏品具备较高的真实性和可靠性。
+                                本次改陈遴选约一千件具有代表性的陶瓷藏品，从新石器时代磁山文化到民国时期，按时代发展顺序和使用功能分17个主题予以展示，力求反映中国陶欣赏、研究。</p>
+                        </li>
+                        <li>
+                            <img src="../image/img084.jpg" alt="古建馆">
+                            <p>无论紫禁城的营造，还是普通大众生活中五行八作的建造成果，其背后无不闪过设计者的身影，无不依赖于擘画之功，无不折射
+                                出意匠的光辉。紫禁城的建筑成就，分布在七十二万平方米的宫院之中;故宫古建筑的设计意匠，可以通过探究收藏、解读历史
+                                而得到深层体验。本展览以清代宫廷建筑设计世家样式雷的成就为线索，以故宫博物院深厚的建筑类文物收藏为依托，遴选出的
+                                清代样式房图纸与裆案，与各类建筑文物以逐一对应的方式展出，以阐释故宫营建者的设计理念，展现紫禁城的建筑之美。<br>
+                                古建馆暂时不开放，再次开放时间另行通知。给您参观带来不便，敬请谅解。
+                            </p>
+                        </li>
+                        <li>
+                            <img src="../image/img085.jpg" alt="家具馆">
+                            <p>2018年9月19日，故宫家具馆正式向公众开放，这是故宫博物馆继陶瓷馆、书画馆等专馆之后，开设的又一大专题展馆。此次开放的家具馆一期
+                                展厅位于故宫博物于紫禁城西南角的南大库区域，馆内“南大库清代宫廷家具展览”出清代家具300余件。根据展览规划，家具馆共分三期展厅。
+                                此次开放的南大库区域一期展厅，除进行仓储式展示300余件清代家具外，还有30余件精品家具，以康熙、雍正、乾隆时期的家具为主，按照
+                                庭院、书房、琴房等主题进行场景计，结合多媒体技术和灯光，形成不同的文化空间，供观众近距离欣赏，徜徉其间。</p>
+                        </li>
+                        <li>
+                            <img src="../image/img086.jpg" alt="戏曲馆">
+                            <p>满族定鼎中原，受汉文化影响，宫中文化生活嬗变。关外“篝火观舞”、“饮酒摔跤”的粗犷娱乐形式，被更有观赏价值的戏曲替代，并成为
+                                宫中娱乐和庆典活动的重要内容。宫廷演戏为世人了解皇家生活情景开启了一扇绝佳的窗口。内廷演戏，各朝发展并不平衡。乾隆朝
+                                社会稳定，库府充盈，戏曲活动形成高潮。嘉庆后各朝，内忧外患，经济萧条，宫中习艺人员骤减，戏曲活动转入低谷。慈禧听政，
+                                嗜戏如命，戏曲活动又重现生机。本展览依据故宫现存大量戏曲文物，从演戏机构、戏装砌末、剧本、戏台、帝后赏戏景观等方面加以展示，
+                                并遴选当年入宫名伶唱片复原播放，使观众从视觉和听觉上全面感受清代宫廷戏曲活动。</p>
+                        <li>
+                            <img src="../image/img087.jpg" alt="数字馆">
+                            <p>故宫博物院端门数字馆是坐落在传统建筑中的新型数字展厅。立足于真实的古建和文物，通过精心采集的高精度文物数据，结合严谨的学术考证，把丰
+                                富的文物和深厚的历史文化积淀，再现于数字世界中。端门数字馆邀请您走进“数字建筑”、触摸“数字文物”，通过与古建、文物的亲密交互，来探索它
+                                们本身固有的特性与内涵，获得比参观实物更丰富有趣的体验。宫殿建筑中小巧难致的室内空间、质地脆弱难以展出的文物珍品、实物展览中无法表达的内
+                                容，都能在端门以数字形态呈现出来，为您打开一扇深人了解故宫博物院的“数字之门”。<br>
+                                数字馆暂时不开放，再次开放时间另行通知。给您参观带来不便，敬请谅解。
+                            </p>
+                        </li>
+                        <li>
+                            <img src="../image/img088.jpg" alt="青铜器馆">
+                            <p>青铜文化是人类文明发展到一定阶段的产物，我国大件青铜器在夏代晚期（考古学文化的二里头时期）开始出现，到商代前期
+                                （二里岗时期）和商代后期（殷墟文化时期），出现了大量气势恢宏、纹饰繁褥的呈组合的青铜器。进入西周、东周时期，
+                                出现了一批具有长篇铭记历史事件的青铜器，这是中国青铜文化的两个特有现象。青铜器的制造和发展，历代绵延不断。<br>
+                                青铜器馆暂时不开放，再次开放时间另行通知。给您参观带来不便，敬请谅解。
+                            </p>
+                        </li>
+                        <li>
+                            <img src="../image/img089.jpg" alt="雕塑馆">
+                            <p>故宫雕塑馆陈列在慈宁宫内，分为雕塑荟馆、汉唐陶俑馆、砖石画像馆、修德白石馆、佛教造像馆五部分，陈列面积约1375平方米，展品总数为425。
+                                雕塑馆陈列的文物主要涵盖陶俑、画像砖石、佛像三大类。陶角从战国到明代，精品叠出，前后相续，构成一部完整的发展历史，其中包括享誉
+                                世界的秦始皇兵马俑等，数量上则以汉与唐居多。陕北与晋西南出土的画像石，内涵丰富，造型独特。河北曲阳白石佛像时间从北魏直至唐，纪年
+                                造像排列有前身是明清两代皇宫，其宫廷旧藏中的永乐、宣德款藏传佛教铜造像，丰满端正，静穆柔序，使用镂空雕刻的方法，丰富了佛像的创作技法。
+                                故宫博物院的告像代表作品。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="../image/img090.png" alt="原状陈列"><br>
+            <div class="image-container">
+                <div class="image1">
+                    <img src="../image/img091.png" alt="太和殿">
+                    <div class="caption">太和殿</div>
+                </div>
+                <div class="box1">
+                    <div class="introduction">
+                        <p>原状陈列是故宫博物院历史悠久、极具特色，且深受广大观众喜爱的展览类型。原状宫殿中的陈设都是严格遵循历史档案记载去选择与布置，
+                            力求恢复历史原貌，让观众能够真切地感受到厚重的历史文化氛围。这些精美的文物藏品与历尽沧桑的古代建筑一起构成和谐统一的整体，
+                            蕴含着丰富的历史信息和文化内涵，向世人形象地展示宫廷文化。</p>
+                    </div>
+                    <div class="box2">
+                        <div class="image2">
+                            <img src="../image/img092.png" alt="中和殿">
+                            <div class="caption">中和殿</div>
+                        </div>
+                        <div class="image">
+                            <img src="../image/img093.png" alt="保和殿">
+                            <div class="caption">保和殿</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image3">
+                    <img src="../image/img094.jpg" alt="乾清宫">
+                    <div class="caption">乾清宫</div>
+                </div>
+                <div class="image3">
+                    <img src="../image/img095.jpg" alt="交泰殿">
+                    <div class="caption">交泰殿</div>
+                </div>
+                <div class="image3">
+                    <img src="../image/img096.png" alt="坤宁宫">
+                    <div class="caption">坤宁宫</div>
+                </div>
+                <div class="image4">
+                    <img src="../image/img097.png" alt="咸若馆">
+                    <div class="caption">咸若馆</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image3">
+                    <img src="../image/img098.png" alt="寿康宫">
+                    <div class="caption">寿康宫</div>
+                </div>
+                <div class="image3">
+                    <img src="../image/img099.png" alt="养心殿">
+                    <div class="caption">养心殿</div>
+                </div>
+                <div class="image3">
+                    <img src="../image/img100.png" alt="储秀宫">
+                    <div class="caption">储秀宫</div>
+                </div>
+                <div class="image4">
+                    <img src="../image/img101.jpg" alt="皇极殿">
+                    <div class="caption">皇极殿</div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="panel">
+                <div>
+                    <h3>太和殿</h3>
+                    <div class="content">
+                        <p>时代：清康熙</p>
+                        <p>分类：殿</p>
+                        <p>区域：外朝中路</p>
+                        <p>太和殿，俗称“金銮殿”，位于紫禁城南北主轴线的显要位置，明永乐十八年（1420年）建成，称奉天殿。嘉靖四十一年（1562年）
+                            改称皇极殿。清顺治二年（1645年）改今名。自建成后屡遭焚毁，又多次重建，今天所见为清代康熙三十四年(1695年)重建后的形制。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>中和殿</h3>
+                    <div class="content">
+                        <p>时代：明嘉靖</p>
+                        <p>分类：殿</p>
+                        <p>区域：外朝中路</p>
+                        <p>中和殿，故宫外朝三大殿之一，位于紫禁城太和殿、保和殿之间。始建于明永乐十八年（1420年），明初称华盖殿，嘉靖时遭遇
+                            火灾，重修后改称中极殿，现天花内构件上仍遗留有明代“中极殿”墨迹。清顺治元年（1644年），清皇室入主紫禁城，第二年
+                            改中极殿为中和殿。殿名取自《礼记·中庸》：“中也者，天下之本也；和也者，天下之道也”之意。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>保和殿</h3>
+                    <div class="content">
+                        <p>时代：明嘉靖</p>
+                        <p>分类：殿</p>
+                        <p>区域：外朝中路</p>
+                        <p>保和殿，故宫外朝三大殿之一。位于中和殿后，建成于明永乐十八年（1420年），初名谨身殿，嘉靖时遭火灾，重修后改称建极殿。
+                            清顺治二年改为保和殿。保和殿于明清两代用途不同，明代大典前皇帝常在此更衣，清代每年除夕、正月十五，皇帝赐外藩、王公及
+                            一二品大臣宴，赐额驸之父、有官职家属宴及每科殿试等均于保和殿举行。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>乾清宫</h3>
+                    <div class="content">
+                        <p>时代：清嘉庆</p>
+                        <p>分类：宫</p>
+                        <p>区域：内廷中路</p>
+                        <p>乾清宫，内廷后三宫之一。始建于明代永乐十八年（1420年），明清两代曾因数次被焚毁而重建，现有建筑为清代嘉庆
+                            三年（1798年）所建。清代康熙以前，这里沿袭明制，自雍正皇帝移住养心殿以后，这里即作为皇帝召见廷臣、批阅奏章、
+                            处理日常政务、接见外藩属国陪臣和岁时受贺、举行宴筵的重要场所。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>交泰殿</h3>
+                    <div class="content">
+                        <p>时代：清嘉庆</p>
+                        <p>分类：殿</p>
+                        <p>区域：内廷中路</p>
+                        <p>内廷后三宫之一，位于乾清宫和坤宁宫之间，约为明嘉靖年间建，顺治十二年（1655年）、康熙八年（1669年）重修，
+                            嘉庆二年（1797年）乾清宫失火，殃及此殿，是年重建。交泰殿为皇后千秋节受庆贺礼的地方。清代，于此殿贮清二十五
+                            宝玺。每年正月，由钦天监选择吉日吉时，设案开封陈宝，皇帝来此拈香行礼。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>坤宁宫</h3>
+                    <div class="content">
+                        <p>时代：明万历</p>
+                        <p>分类：宫</p>
+                        <p>区域：内廷中路</p>
+                        <p>坤宁宫是内廷后三宫之一，始建于明永乐十八年(1420年)，正德九年(1514年)、万历二十四年(1596年)两次毁于火，万历三十
+                            三年(1605年)重建。清沿明制于顺治二年(1645年)重修，十二年(1655年)仿沈阳盛京清宁宫再次重修。嘉庆二年(1797年)
+                            乾清宫失火，延烧此殿前檐，三年(1798年)重修。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>咸若馆</h3>
+                    <div class="content">
+                        <p>时代：清</p>
+                        <p>分类：馆</p>
+                        <p>区域：内廷外西路</p>
+                        <p>咸若馆位于慈宁宫花园北部中央，是园中主体建筑，为清代太后、太妃礼佛之所。明代初建时称咸若亭，万历十一年（1583年）
+                            更名曰咸若馆。清乾隆年间先后大修、改建，即今所见形制。馆内悬清乾隆皇帝御书“寿国香台”匾、“证最胜因金界庄严欢喜地，
+                            赞无量寿宝轮拥护吉祥云”联，并陈设龛、案、佛像、法器、供物等。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>寿康宫</h3>
+                    <div class="content">
+                        <p>时：清雍正</p>
+                        <p>分类：宫</p>
+                        <p>区域：内廷外西路</p>
+                        <p>寿康宫始建于雍正十三年(1735)十二月，竣工于乾隆元年(1736)十月，系乾隆皇帝为其生母崇庆皇太后建造的颐养起居之所，
+                            其后成为清代奉养皇太后的宫殿。嘉庆、道光、咸丰、光绪年间虽曾进行过多次修缮，但与初建时的在局基本相同。此宫仅供
+                            皇太后使用，其余太妃、太嫔并不在此居住。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>养心殿</h3>
+                    <div class="content">
+                        <p>时代：明嘉靖</p>
+                        <p>分类：殿</p>
+                        <p>区域：内廷西路</p>
+                        <p>养心殿，明代嘉靖年建，位于内廷乾清宫西侧。清初顺治皇帝病逝于此地。康熙年间，这里曾经作为宫中造办处的作坊，
+                            专门制作宫廷御用物品。自雍正皇帝居住养心殿后，造办处的各作坊遂逐渐迁出内廷，这里就一直作为清代皇帝的寝宫，
+                            至乾隆年加以改造、添建，成为一组集召见群臣、处理政务、皇帝读书、学习及居住为一体的多功能建筑群。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>储秀宫</h3>
+                    <div class="content">
+                        <p>时代：明永乐</p>
+                        <p>分类：宫</p>
+                        <p>区域：内廷西路</p>
+                        <p>储秀宫，内廷西六宫之一，明清时为妃嫔所居。始建于明永乐十八年（1420年），原名寿昌宫，嘉靖十四年（1535年）改曰储秀宫。
+                            清代曾多次修葺，光绪十年（1884年）为庆祝慈禧五十寿辰，耗费白银63万两进行大规模整修，现存建筑为光绪十年重修后的形制。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div>
+                    <h3>皇极殿</h3>
+                    <div class="content">
+                        <p>时代：清康熙</p>
+                        <p>分类：殿</p>
+                        <p>区域：内廷外东路</p>
+                        <p>皇极殿为宁寿宫区的主体建筑，始建于清康熙二十八年(1689年)，初名宁寿宫。乾隆三十七年(1772年)至四十一年(1776年)改
+                            建宁寿宫一区建筑时，将宁寿宫改称为皇极殿，作为乾隆皇帝归政后临朝受贺之所。皇极殿彩画原为金龙和玺彩画，慈禧太后六
+                            十寿辰在此祝寿，将外檐改为枋心苏式彩画。1979年重新修缮后，恢复了乾隆时期的风貌。</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="../js/exhibition.js"></script>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 故宫博物馆</p>
+        <p>作者信息：</p>
+        <p>张诗敏——202325710428——首页、框架</p>
+        <p>谢琳——202325710423——游览</p>
+        <p>叶桂珍——202325710426——展览</p>
+        <p>吴桐——202325710422——文创</p>
+        <p>王海清——202325710419——订票、登录</p>
+    </footer>
+    </body>
+</html>

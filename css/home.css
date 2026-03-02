@@ -1,0 +1,689 @@
+/* 容器样式 */
+.container1 {
+    /* 留出顶部空间以适应固定头部 */
+    margin-top: 70px;
+    height: 700px;
+}
+
+.container2 {
+    height: 3000px;
+}
+
+.container3 {
+    height: 720px;
+}
+
+/*轮播图*/
+.show {
+    width: 1440px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+#slide {
+    width: max-content;
+    margin-top: 50px;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    background-position: 50% 50%;
+    display: inline-block;
+    /*行内块，在一行上排列*/
+    background-size: cover;
+    /*背景图片按比例铺满*/
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    transition: .5s;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.item:nth-child(3) {
+    left: 50%;
+}
+
+.item:nth-child(4) {
+    left: calc(50% + 220px);
+}
+
+.item:nth-child(5) {
+    left: calc(50% + 440px);
+}
+
+.item:nth-child(n+6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.item .content {
+    width: 400px;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    display: none;
+    /*文字不显示*/
+}
+
+.item:nth-child(2) .content {
+    display: block;
+    /*该页面文字单独显示*/
+}
+
+.item .name {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards;
+    /*执行一次，保持最后状态*/
+}
+
+.item .desc {
+    margin: 20px 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+    /*延时0.3s*/
+}
+
+.item button {
+    padding: 10px 20px;
+    border: none;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+
+@keyframes showcontent {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+        filter: blur(20px);
+        /*模糊效果*/
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.buttons {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    margin-left: -50px;
+    text-align: center;
+}
+
+.s_button {
+    display: inline-block;
+    /*行内块，在一行上排列*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    /*值等于height可以让里面的内容垂直居中*/
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 50px;
+    transition: .5s;
+    /*0.5s过渡时间*/
+}
+
+.s_button:hover {
+    cursor: pointer;
+    background-color: rgb(220, 48, 35);
+}
+
+.s_icon {
+    display: inline-block;
+    /*行内块，在一行上排列*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    /*值等于height可以让里面的内容垂直居中*/
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 0 50px;
+}
+
+/* 主内容区域样式 */
+main {
+    margin: 30px;
+    padding: 30px;
+    flex: 1;
+    /* 自适应宽度 */
+}
+
+/* 主页标题 */
+.hometitle {
+    font-family: '楷体';
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* 今日开馆模块样式 */
+.open {
+    background-color: rgb(120, 146, 98);
+    text-align: center;
+    padding: 20px;
+    border: 10px #eacd76 solid;
+    margin: 50px;
+}
+
+.open .title1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.open .p1 {
+    font-size: 20px;
+    color: rgb(255, 182, 30);
+    margin: 2px;
+}
+
+.open .p2 {
+    color: rgb(233, 231, 239);
+    margin: 2px;
+}
+
+.open .p3 {
+    color: rgb(242, 190, 69);
+    margin: 2px;
+}
+
+.showtime {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #eacd76;
+    animation: transformLeft 1s ease 2s;
+
+}
+
+.open .span1 {
+    color: rgb(233, 231, 239);
+    margin-right: 110px;
+}
+
+.open .span2 {
+    color: rgb(233, 231, 239);
+    margin-right: 130px;
+}
+
+.open .span3 {
+    color: rgb(233, 231, 239);
+}
+
+/* 去订票模块样式 */
+.booking {
+    height: 400px;
+    margin: 50px;
+}
+
+.booking .d1 {
+    position: absolute;
+    top: 1450px;
+    left: 0;
+    animation: transformLeft 1s ease 1s;
+}
+
+.booking .d2 {
+    position: absolute;
+    top: 1490px;
+    left: 300px;
+    animation: transformLeft 1s ease 1.4s;
+}
+
+.booking .d3 {
+    position: absolute;
+    top: 1550px;
+    left: 50px;
+    animation: transformLeft 1s ease 1.2s;
+}
+
+.booking .d4 {
+    position: absolute;
+    top: 1430px;
+    left: 1370px;
+    animation: transformRight 1s ease 1s;
+}
+
+.booking .d5 {
+    position: absolute;
+    top: 1450px;
+    left: 560px;
+    animation: transformLeft 1s ease 1.6s;
+}
+
+.booking .d6 {
+    position: absolute;
+    top: 1750px;
+    left: 850px;
+    animation: transformRight 1s ease 1.6s;
+}
+
+.booking .d7 {
+    position: absolute;
+    top: 1500px;
+    left: 1150px;
+    animation: transformRight 1s ease 1.2s;
+}
+
+.booking .d8 {
+    position: absolute;
+    top: 1480px;
+    left: 950px;
+    animation: transformRight 1s ease 1.4s;
+}
+
+.booking .booknowbg {
+    position: absolute;
+    top: 1480px;
+    left: 620px;
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/bg01.png);
+    background-size: 296px;
+    text-align: center;
+    animation: circle 10s linear infinite 5s;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes transformLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes transformRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.booking .booknow {
+    position: absolute;
+    top: 1550px;
+    left: 620px;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+}
+
+.booknow a {
+    text-decoration: none;
+    font-family: '隶书';
+    font-size: 50px;
+    color: rgb(220, 48, 35);
+    position: relative;
+    top: 40%;
+}
+
+/* 公告模块样式 */
+.publish {
+    margin-bottom: 50px;
+    height: 550px;
+    display: flex;
+}
+
+.title2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.publish .p1 {
+    width: 500px;
+    height: 507px;
+    background-image: url(../image/bg02.jpg);
+    background-size: 200%;
+    padding: 20px;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.396);
+}
+
+.publish .p1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.publish .p1 a:hover {
+    color: rgb(255, 199, 79);
+}
+
+.publish .p2 {
+    width: 400px;
+    height: 507px;
+    background-image: url(../image/bg03.jpg);
+    background-size: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.396);
+}
+
+.publish .p2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.publish .p2 a:hover {
+    color: rgb(123, 207, 166);
+}
+
+.publish .p3 {
+    width: 400px;
+    height: 507px;
+}
+
+.publish .p3 img {
+    width: 400px;
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+
+.publish .p3 img:hover {
+    filter: grayscale(0%);
+}
+
+/* 数字藏品 */
+.save {
+    margin-bottom: 50px;
+    height: 500px;
+    display: flex;
+}
+
+.save .s1 {
+    width: 300px;
+    height: 470px;
+    background-image: url(../image/bg04.jpg);
+    background-size: 100%;
+    padding: 20px;
+    margin: 0 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.378);
+}
+
+.save .s1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.save .s1 a:hover {
+    color: rgb(229, 149, 44);
+}
+
+.title3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    top: 100px;
+}
+
+.save .s1_digital {
+    color: rgb(236, 202, 121);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+
+.save .s1_digital1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 160px;
+}
+
+.save .s1_button {
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'kaiti';
+    color: #fff;
+    background: none;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 60px;
+    border: 6px dotted #eacd76;
+    border-radius: 20px;
+}
+
+.save .s2 {
+    width: 70%;
+    height: 510px;
+    display: flex;
+}
+
+.save .s2 .s2_box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 3px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.396);
+    border-radius: 20px;
+    border: 5px solid rgb(218, 187, 114);
+    background-color: #ffffff;
+}
+
+.save .s2 .s2_box>img {
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.save .s2 .s2_box>span {
+    font: 200 20px '隶书';
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save .s2 .s2_box:hover {
+    flex-basis: 50%;
+}
+
+.save .s2 .s2_box:hover>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 滚动显示 */
+.box {
+    opacity: 0;
+    /* 初始为透明，不可见 */
+    transition: opacity 0.5s ease;
+    /* 定义过渡动画效果，用于渐现 */
+}
+
+.box-content {
+    opacity: 0;
+    /* 初始为透明，不可见 */
+    transition: opacity 0.5s ease;
+    /* 定义过渡动画效果，用于渐现 */
+}
+
+/*宣传视频*/
+.see {
+    margin-bottom: 100px;
+}
+
+/* 视频装饰 */
+.see .b1 {
+    position: absolute;
+    top: 3267px;
+    left: 1270px;
+}
+
+.see .b2 {
+    position: absolute;
+    top: 3100px;
+    left: 35px;
+}
+
+.see .b3 {
+    position: absolute;
+    top: 3100px;
+    left: 1270px;
+}
+
+.see .b4 {
+    position: absolute;
+    top: 3447px;
+    left: 65px;
+}
+
+/* 视频 */
+.video {
+    width: 1000px;
+    height: 580px;
+    position: relative;
+    left: 130px;
+    perspective: 800;
+    margin: 45px;
+    margin-top: 100px;
+    border: 18px outset rgb(179, 109, 97);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.396);
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* 界面跳转 */
+.gonext {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.go_item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    text-align: right;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #eacd76;
+    box-shadow: 10px 10px 20px rgb(255, 198, 75);
+    /* 动画——动画名，持续1s，先加速后减速，等待0s，循环，左右摆动 */
+    animation: breathe 2s ease-out 0s infinite alternate;
+}
+
+@keyframes breathe {
+    0% {
+        opacity: 0.5;
+        box-shadow: 0px 0px 20px rgba(255, 238, 89, 0.1);
+    }
+
+    50% {
+        opacity: 0.8;
+        box-shadow: 0px 0px 20px rgba(255, 251, 240, 0.76);
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 20px rgba(255, 198, 75, 1);
+    }
+}
+
+.g1 {
+    left: 1100px;
+    top: 50px;
+}
+
+.g2 {
+    left: 600px;
+    top: 200px;
+}
+
+.g3 {
+    left: 100px;
+    top: 100px;
+}
+
+.go_item a {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'kaiti';
+    text-decoration: none;
+}
+
+.go_bg {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../image/img025.jpg);
+    background-position: center;
+    /* 实现滚动时背景不动 */
+    background-attachment: fixed;
+
+}
+
+/* 回顶标志 */
+.backtop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+/* 平滑回顶 */
+html {
+    scroll-behavior: smooth;
+}

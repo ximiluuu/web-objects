@@ -1,0 +1,427 @@
+
+/* 容器样式 */
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 70px; /* 留出顶部空间以适应固定头部 */
+}
+
+.flow {
+    width: 580px;
+    height: 58px;
+    margin: 0px -493px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.flow img {
+    width: 15px;
+    height: 18px;
+    margin: 0px 5px 0px 0px;
+}
+
+.flow span {
+    margin-left: 5px;
+    font-size: 15px;
+    color: red !important;
+}
+
+.marquee {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 1100px;
+    height: 58px;
+    color: #2c37ae;
+} 
+
+.marquee p {
+    margin: 0; /* 移除默认的 margin */
+    line-height: 20px; /* 根据需要调整行高 */
+    animation: marquee 25s linear infinite; /* 调整动画时间 */
+    color: red;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* 主内容区域样式 */
+main {
+    margin-left: 220px; /* 留出导航栏的空间 */
+    padding: 30px;
+    flex: 1; /* 自适应宽度 */
+}
+
+/* 各个内容区块样式 */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: rgb(46, 78, 126);
+}.tp{
+    display: flex;
+    width: 95%;
+    height: auto;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+  }
+  .date1{
+  font-size: 20px;
+  margin: 5px 0 0 20px;
+  flex-grow: 1;
+  }
+  .weather{
+      display: flex;
+      color: #9f7b4b;
+      font-size: 20px;
+      margin: 5px 40px 0px 0px;
+      align-items: center;
+      margin-right: auto;
+  }
+  .tp1{
+      width: 100%;
+      margin-top: 10px;
+  }
+  .tp1 img{
+      width: 70%; /* 图片宽度占满容器 */
+      height: auto; /* 高度自适应 */
+      border-radius: 8px; /* 圆角 */
+      margin: 5px 100px 5px 200px;
+  }
+  .book {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    width: 99%;
+    height: 550px;
+    background-color: #f2ebeb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* 左右两部分各占一半 */
+    padding: 10px;
+    background-color: #e7ded9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+}
+.left{
+    margin-left: 10px;
+}
+.right{
+    margin-right: 15px;
+}
+.tit1, .tit2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #a4262c; /* 标题颜色 */
+}
+.cont1, .cont2 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.picture{
+    width: 500px;
+    height: 80px;
+}
+.picture img {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+.picture span{
+display: inline;
+align-items: middle;
+} 
+.qr-code {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: column;
+    bottom: 10px;
+    right: 10px;
+}
+.qr-code img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin-left: 280px;
+    margin-top: 0px;
+}
+.word a {
+    display: block;
+    margin-top: 10px;
+    color: #a4262c;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 330px;
+}
+
+.word a:hover, .word a:active {
+    text-decoration: underline;
+    color: #d9534f; /* 鼠标悬停或点击时的颜色 */
+}
+.tk{
+    color: #333;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    line-height: 1.6;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.zc{
+    line-height: 1.6;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.zc img{
+    line-height: 1.6;
+    font-size: 20px;
+    color: inherit !important;
+    box-sizing: border-box;
+    vertical-align: middle;
+    max-width: 100%;
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+}
+.visit{
+    font-size: 30px;
+    line-height: 10px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    color:black;
+    padding-bottom: 62px;
+}
+.visit-box{
+    position: relative;
+    width: auto;
+    margin: 0 15px;
+}
+.divider {
+    border: 0; 
+    height: 2px; /* 设置横线的高度 */
+    background-color: #213c57; /* 设置横线的颜色 */
+    margin: 10px 5px; /* 设置横线与内容的间距 */
+}
+.tit3{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+.desc{
+    text-align: center;
+    margin-top: 17px;
+    line-height: 2;
+    letter-spacing: 4px;
+}
+.desc span{
+    box-sizing: border-box;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.list{
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    margin-top: 40px;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.li{    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 60px;
+}
+.icon{
+    font-size: 14px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    position: relative;
+    width: 50px;
+    margin: 0 auto;
+}
+.i {
+    width: 50px; /* 或者设置为具体的宽度，如 50px */
+    height: 50px; /* 保持图片比例 */
+    display: block; /* 确保图片作为块级元素显示 */
+    margin: 0 auto; /* 居中对齐 */
+    position: relative; /* 如果不需要绝对定位，可以设置为 relative */
+}
+.t{
+    line-height: 1.5;
+    color: #555353;
+    font-family: "微软雅黑";
+    font-weight: 500;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.tel{
+    line-height: 1.5;
+    box-sizing: border-box;
+    color: #b2b2b288;
+    font-family: arial;
+    margin-top: 4px;
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -24px;
+    font-size: 14px;
+}
+.a{
+    --bar-scrollbarWidth: 15.333299999999994px;
+    font-family: 'Microsoft Yahei','PingFang SC',Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    color: inherit !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0);
+}
+/* 图片抖动动画 */
+@keyframes shake {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    10%, 30% { transform: translate3d(-2px, 0, 0); }
+    50%, 70% { transform: translate3d(2px, 0, 0); }
+    90% { transform: translate3d(0, 0, 0); }
+}
+
+.icon {
+    transition: transform 0.2s;
+}
+
+.icon.shake {
+    animation: shake 0.2s ease-in-out;
+}
+
+.t {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.t:hover {
+    animation: shake 0.2s ease-in-out;
+}
+/* 模态框样式 */
+.grxz {
+    display: none; /* 默认不显示 */
+    position: fixed; /* 固定定位，覆盖整个屏幕 */
+    z-index: 1; /* 确保在最上层 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 宽度为整个屏幕 */
+    height: 100%; /* 高度为整个屏幕 */
+    overflow: auto; /* 允许滚动 */
+    background-color: rgba(0, 0, 0, 0.4); /* 背景半透明黑色 */
+}
+
+.grxz-box {
+    background-color: #fefefe; /* 模态框背景色 */
+    margin: 15% auto; /* 垂直居中 */
+    padding: 20px; /* 内边距 */
+    border: 1px solid #888; /* 边框 */
+    width: 80%; /* 宽度为屏幕的80% */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* 阴影效果 */
+}
+
+.close {
+    color: #aaa; /* 关闭按钮颜色 */
+    float: right; /* 右浮动 */
+    font-size: 28px; /* 字体大小 */
+    font-weight: bold; /* 加粗 */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* 鼠标悬停或聚焦时的颜色 */
+    text-decoration: none; /* 无下划线 */
+    cursor: pointer; /* 鼠标指针为手形 */
+}
+
+/* 其他样式 */
+.tit4 {
+    font-size: 24px; /* 标题字体大小 */
+    font-weight: bold; /* 加粗 */
+    margin-bottom: 10px; /* 底部边距 */
+}
+
+.grxz-box {
+    max-height: 340px; /* 最大高度 */
+    overflow-y: auto; /* 垂直滚动 */
+}s
+  
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: rgb(80, 97, 109);
+    color: white;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+footer p a {
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}

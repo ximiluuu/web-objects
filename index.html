@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故宫博物馆</title>
+    <link rel="stylesheet" href="./css/frame.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="top-icon">
+            <img src="./image/img001.png">
+            <h1>故宫博物馆</h1>
+        </div>
+        <nav>
+            <div class="top-nav">
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./pages/tour.html">游览</a></li>
+                    <li><a href="./pages/exhibition.html">展览</a></li>
+                    <li><a href="./pages/cultural.html">文创</a></li>
+                    <li><a href="./pages/book.html">订票</a></li>
+                    <li><a href="./pages/register.html">登录</a></li>
+                    <div class="nav-box"></div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 容器 -->
+    <div class="container1">
+        <!-- 首页轮播图 -->
+        <div class="show" id="show">
+            <div id="slide">
+                <div class="item" style="background-image: url(./image/img018.jpg);">
+                    <div class="content">
+                        <div class="name">故宫博物馆</div>
+                        <div class="desc">成立于1925年的故宫博物院，建立在明清两朝皇宫——紫禁城的基础上。历经六百年兴衰荣辱，帝王宫殿的大门终于向公众敞开。</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./image/img019.jpg);">
+                    <div class="content">
+                        <div class="name">乾清门广场</div>
+                        <div class="desc">
+                            它是中华民族的骄傲所在，也是全人类的珍贵文化遗产。如今，昔日皇宫禁地那占地112万平方米的重重宫阙，既是收藏明清皇室珍宝的巨大宝库，也是记载明清宫廷历史的鲜活档案。</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./image/img020.jpg);">
+                    <div class="content">
+                        <div class="name">紫禁城</div>
+                        <div class="desc">走进故宫博物院，您沿中轴线前行，从起伏跌宕的建筑乐章中可以感受盛世皇朝的博大胸怀。</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./image/img021.jpg);">
+                    <div class="content">
+                        <div class="name">太和殿</div>
+                        <div class="desc">您可以透过东西六宫精巧的陈设和内廷园囿雅致的格局，捕捉宫廷生活的温婉气息；可以从养心殿东暖阁卷起的黄纱帘中，追溯百年前中华民族内忧外患的历史沧桑。
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./image/img022.jpg);">
+                    <div class="content">
+                        <div class="name">历史之遇</div>
+                        <div class="desc">中国与西亚古代文明交流展</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./image/img023.jpg);">
+                    <div class="content">
+                        <div class="name">江山逸韵 时代新风</div>
+                        <div class="desc">中央文史研究馆馆员书画作品展</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./image/img024.jpg);">
+                    <div class="content">
+                        <div class="name">清 蒋檙万汇春图册</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./image/img025.jpg);">
+                    <div class="content">
+                        <div class="name">明 沈周荷香泛艇图轴（局部）</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./image/img026.jpg);">
+                    <div class="content">
+                        <div class="name">清 袁耀九成宫图轴（局部）</div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="s_button"><img src="./image/img014.png"></div>
+                <div class="s_icon"><img src="./image/img001.png"></div>
+                <div class="s_button"><img src="./image/img015.png"></div>
+            </div>
+        </div>
+        <script src="./js/photoShow.js"></script>
+    </div>
+
+
+    <div class="container2">
+        <!-- 主内容区域 -->
+        <main>
+            <div style="text-align: center;"><img src="./image/img002.png" alt=""></div>
+            <div class="hometitle"><img src="./image/img003.png"> 故宫博物馆 <img src="./image/img004.png"></div>
+            <article>
+                <!-- 开馆时间 -->
+                <section class="open box">
+                    <div class="title1"><img src="./image/img005.png"> <span id="messageText"></span> <img src="./image/img006.png"></div>
+                    <p class="p1" id="dateText"></p>
+                    <p class="p2">除法定节假日，故宫博物院全年实行<span class="p3">周一闭馆</span></p>
+                    <p class="p2">参观须 <span class="p3">提前订票</span> ，最早可于参观7日前20:00开始预订。年票观众须至少提前一日登记参观。刷 <span class="p3">身份证</span> 检票后入院参观。</p>
+                    <div class="showtime box-content"> 08:30 <img src="./image/img007.png"> 15:30 <img src="./image/img007.png"> 16:30 </div>
+                    <span class="span1">开放入馆时间</span>
+                    <span class="span2">停止入馆时间</span>
+                    <span class="span3">闭馆时间</span>
+                    <script src="./js/date.js"></script>
+                </section>
+
+                <!-- 去订票 -->
+                <section class="booking box">
+                    <div class="d1 box-content" data-index="0"><img src="./image/img008.png" width="150px"></div>
+                    <div class="d4 box-content" data-index="0"><img src="./image/img011.png" width="150px"></div>
+                    <div class="d3 box-content" data-index="1"><img src="./image/img010.png" width="250px"></div>
+                    <div class="d7 box-content" data-index="1"><img src="./image/img016.png" width="300px"></div>
+                    <div class="d2 box-content" data-index="2"><img src="./image/img009.png" width="200px"></div>
+                    <div class="d8 box-content" data-index="2"><img src="./image/img017.png" width="230px"></div>
+                    <div class="d5 box-content" data-index="3"><img src="./image/img012.png" width="100px"></div>
+                    <div class="d6 box-content" data-index="3"><img src="./image/img013.png" width="100px"></div>
+                    <div class="booknowbg box-content" data-index="4"></div>
+                    <div class="booknow box-content" data-index="5"><a href="./pages/book.html" target="_blank">立即订票</a></div>
+                </section>
+
+                <!-- 公告 -->
+                <section class="publish box">
+                    <div class="p1">
+                        <div class="title2"><img src="./image/img032.png" width="20px"><span><a href="https://www.dpm.org.cn/about/info_recent.html" target="_blank"> 故宫 <img src="./image/img034.png" width="20px"> 资讯 </a></span><img src="./image/img033.png" width="20px"></div>
+                        <p><a href="https://www.dpm.org.cn/classify_detail/257625.html" target="_blank"><img src="./image/img034.png" width="10px">【声明】故宫博物院关于“数字藏品”的声明</a></p>
+                        <p><a href="https://www.dpm.org.cn/classify_detail/234910.html" target="_blank"><img src="./image/img034.png" width="10px">【严正声明】关于我院依法对“故宫博物院”享有名称权和对已注册商标的商标专用权的严正声明</a></p>
+                        <p><a href="https://www.dpm.org.cn/classify_detail/167257.html" target="_blank"><img src="./image/img034.png" width="10px">【声明】关于故宫博物院在职、离退休人员参加社会文物鉴定等公务性活动的声明</a></p>
+                        <hr>
+                        <p><a href="https://www.dpm.org.cn/classify_detail/368427.html" target="_blank">--温暖冬日公益行！200套“故宫小书包”走进新疆和湖南</a></p>
+                        <p><a href="https://www.dpm.org.cn/classify_detail/368425.html" target="_blank">--故宫博物院举行清室善后委员会成立百年纪念座谈会暨故宫博物院档案馆（院史陈列馆）揭牌仪式</a></p>
+                        <p><a href="https://www.dpm.org.cn/activity/education/368424.html" target="_blank">--用技术守护北京中轴 青少年在故宫话文化传承</a></p>
+                        <p><a href="https://www.dpm.org.cn/classify_detail/368352.html" target="_blank">--故宫学研究院举行成立揭牌仪式</a></p>
+                    </div>
+                    <div class="p3">
+                        <img src="./image/img031.jpg">
+                    </div>
+                    <div class="p2">
+                        <div class="title2"><img src="./image/img032.png" width="20px"><span><a href="https://www.dpm.org.cn/announce.html" target="_blank"> 开放 <img src="./image/img034.png" width="20px"> 公告 </a></span><img src="./image/img033.png" width="20px"></div>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/259828.html" target="_blank"><img src="./image/img034.png" width="10px"> 6月30日起《故宫博物院参观须知》正式施行</a></p>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/251751.html" target="_blank"><img src="./image/img034.png" width="10px"> 故宫博物院关于暂停城墙开放的公告</a></p>
+                        <hr>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/368443.html" target="_blank">--关于2025年公共交通司乘人员主题免费开放日的公告</a></p>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/367564.html" target="_blank">--关于2025年故宫博物院年票发售的公告</a></p>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/367499.html" target="_blank">--关于2024年公安民警主题免费开放日的公告</a></p>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/366892.html" target="_blank">--关于2024年医务人员和志愿者主题免费开放日的公告</a></p>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/264850.html" target="_blank">故宫博物院关于雕版馆暂时闭馆的通知</a></p>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/264791.html" target="_blank">故宫博物院关于继续关闭慈宁宫花园区域的公告</a></p>
+                        <p><a href="https://www.dpm.org.cn/announce_detail/263932.html" target="_blank">故宫博物院2024年暑期观众参观温馨提示</a></p>
+                    </div>
+                </section>
+
+                <!-- 数字藏品 -->
+                <section class="save box">
+                    <div class="s1">
+                        <div class="title3"><img src="./image/img032.png" width="20px"><span><a href="https://zm-digicol.dpm.org.cn/" target="_blank"> 故宫 <img src="./image/img034.png" width="20px"> 藏品 </a></span><img src="./image/img033.png" width="20px"></div>
+                        <div class="s1_digital"><span id="num1"></span>,<span id="num2"></span>,<span id="num3"></span></div>
+                        <div class="s1_digital1">件/套</div>
+                        <button class="s1_button" onclick="run()">藏品数目</button>
+                        <script src="./js/changeDigital.js"></script>
+                    </div>
+                    <div class="s2">
+                        <div class="s2_box">
+                            <img src="./image/img035.jpg">
+                            <span>清 . 禹之鼎画山水册页</span>
+                        </div>
+                        <div class="s2_box">
+                            <img src="./image/img036.jpg">
+                            <span>宋人白头丛竹图页</span>
+                        </div>
+                        <div class="s2_box">
+                            <img src="./image/img037.jpg">
+                            <span>清乾隆 . 粉彩象驮瓶花觚</span>
+                        </div>
+                        <div class="s2_box">
+                            <img src="./image/img038.jpg">
+                            <span>清嘉庆 . 银镀金嵌珠宝如意簪</span>
+                        </div>
+                        <div class="s2_box">
+                            <img src="./image/img039.jpg">
+                            <span>清 . 康熙款画珐琅开光梅花纹鼻烟壶</span>
+                        </div>
+                    </div>
+                </section>
+
+                <script src="./js/scroll.js"></script>
+
+                <!-- 游览故宫 -->
+                <section class="see">
+                    <!-- 视频展示 -->
+                    <div class="video">
+                        <video src="./image/v01.mp4" autoplay loop muted class="bg"></video>
+                    </div>
+                    <!-- 装饰边边 -->
+                    <div class="b1"><img src="./image/img027.png" width="250px"></div>
+                    <div class="b2"><img src="./image/img028.png" width="200px"></div>
+                    <div class="b3"><img src="./image/img029.png" width="200px"></div>
+                    <div class="b4"><img src="./image/img030.png" width="300px"></div>
+                </section>
+            </article>
+
+            <aside>
+                <!-- 回顶标志 -->
+                <div class="backtop">
+                    <a href="#show"><img src="./image/img043.png" width="200px"></a>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <div class="container3">
+        <section class="gonext">
+            <div class="go_item g1">
+                <a href="./pages/wenchuang.html"><img src="./image/img040.png" width="300px">文创</a>
+            </div>
+            <div class="go_item g2">
+                <a href="./pages/exhibition.html"><img src="./image/img041.png" width="300px">展览</a>
+            </div>
+            <div class="go_item g3">
+                <a href="./pages/tour.html"><img src="./image/img042.png" width="300px">游览</a>
+            </div>
+            <div class="go_bg"></div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2025 故宫博物馆</p>
+        <p>作者信息：</p>
+        <p>张诗敏——202325710428——首页、框架</p>
+        <p>谢琳——202325710423——游览</p>
+        <p>叶桂珍——202325710426——展览</p>
+        <p>吴桐——202325710422——文创</p>
+        <p>王海清——202325710419——订票、登录</p>
+    </footer>
+</body>
+
+</html>

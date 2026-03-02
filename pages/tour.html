@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故宫博物馆</title>
+   <link rel="stylesheet" href="../css/frame.css">
+   <link rel="stylesheet" href="../css/tour.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="top-icon">
+            <img src="../image/img001.png">
+            <h1>故宫博物馆</h1>
+        </div>
+        <nav>
+            <div class="top-nav">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="./tour.html">游览</a></li>
+                    <li><a href="./exhibition.html">展览</a></li>
+                    <li><a href="./cultural.html">文创</a></li>
+                    <li><a href="./book.html">订票</a></li>
+                    <li><a href="./register.html">登录</a></li>
+                    <div class="nav-box"></div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主内容区域 -->
+     <article>
+        <div class="wrap">
+            <section id="open_time">
+                <div class="title">
+                    <img src="../image/img044.png">
+                    <span>开放时间</span>
+                    <img src="../image/img045.png">
+                </div>
+                <div class="open_time_main">
+                    <div class="open_time_left">
+                        <div>
+                            <span>旺季</span>
+                            <span>8:30-16:00</span>
+                        </div>
+                        <p>每年4月1日至10月31日采用旺季开放时间</p>
+                        <ul>
+                            <li>
+                                开放入馆时间：<span>8:30</span>
+                            </li>
+                            <li>
+                                停止入馆时间：<span>16:00</span>
+                            </li>
+                            <li>
+                                珍宝馆、钟表馆停止入馆时间：<span>16:10</span>
+                            </li>
+                            <li>
+                                闭馆时间：<span>17:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="open_time_right">
+                        <div>
+                            <span>8:30-15:30</span>
+                            <span>淡季</span>
+                        </div>
+                        <p>每年11月1日至来年3月31日采用淡季开放时间</p>
+                        <ul>
+                            <li>
+                                <span>开放入馆时间：</span>8:30
+                            </li>
+                            <li>
+                                <span>停止入馆时间：</span>15:30
+                            </li>
+                            <li>
+                                <span>珍宝馆、钟表馆停止入馆时间：</span>15:40
+                            </li>
+                            <li>
+                                <span>闭馆时间：</span>16:30
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="tour_map">
+                <div class="title">
+                    <img src="../image/img044.png" alt="">
+                    <span>导览地图</span>
+                    <img src="../image/img045.png" alt="">
+                </div>
+                <div class="tour_map_main">
+                    <aside>
+                        <ul>
+                            <li><a><img src="../image/img046.png"><span>故宫博物院开放区域</span></a></li>
+                            <li>
+                                <img src="../image/img046.png"><span>推荐路线</span>
+                                <ul class="list">
+                                    <li><a><img src="../image/img047.png"><span>两小时游路线1</span></a></li>
+                                    <li><a><img src="../image/img047.png"><span>两小时游路线2</span></a></li>
+                                    <li><a><img src="../image/img047.png"><span>半日游路线1</span></a></li>
+                                    <li><a><img src="../image/img047.png"><span>半日游路线2</span></a></li>
+                                    <li><a><img src="../image/img047.png"><span>一日游路线</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="../image/img046.png"><span>服务设施</span>
+                                <ul class="list">
+                                    <li><a><img src="../image/img048.png"><span>卫生间</span></a></li>
+                                    <li><a><img src="../image/img049.png"><span>餐饮</span></a></li>
+                                    <li><a><img src="../image/img050.png"><span>母婴室</span></a></li>
+                                    <li><a><img src="../image/img051.png"><span>医务</span></a></li>
+                                    <li><a><img src="../image/img052.png"><span>存取包</span></a></li>
+                                    <li><a><img src="../image/img053.png"><span>书店</span></a></li>
+                                    <li><a><img src="../image/img054.png"><span>商店</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a><img src="../image/img046.png" ><span>无障碍通道</span></a></li>
+                        </ul>
+                    </aside>
+                    <div class="map_content_box">
+                        <div class="map_wrap">
+                            <div class="map_content now">
+                                <div class="ctnt"><img src="../image/img055.jpg" onclick="move()"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img056.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img057.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img058.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img059.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img060.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img061.png"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img062.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img063.png"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img064.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img065.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img066.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img067.png"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                            <div class="map_content">
+                                <div class="ctnt"><img src="../image/img068.jpg"></div>
+                                <div class="map_btns">
+                                    <i class="jia" onclick="bigger()"><span>&#43;</span></i>
+                                    <i class="jian" onclick="smaller()"><span>&#45;</span></i>
+                                    <i class="download"><span></span></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+     </article>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2025 故宫博物馆</p>
+        <p>作者信息：</p>
+        <p>张诗敏——202325710428——首页、框架</p>
+        <p>谢琳——202325710423——游览</p>
+        <p>叶桂珍——202325710426——展览</p>
+        <p>吴桐——202325710422——文创</p>
+        <p>王海清——202325710419——订票、登录</p>
+    </footer>
+</body>
+<script type="text/javascript" src="../js/tour.js"></script>
+</html>
